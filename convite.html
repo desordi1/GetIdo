@@ -55,10 +55,10 @@
       // Redirecionar para o WhatsApp
       document.getElementById("whatsappButton").onclick = function () {
         var mensagem = encodeURIComponent("Olá! Esta é uma mensagem padrão.");
+        // window.location.href =
+        //   "whatsapp://send?phone=" + numeroCelular + "&text=" + mensagem;
         window.location.href =
-          "whatsapp://send?phone=" + numeroCelular + "&text=" + mensagem;
-        //   window.location.href =
-        // "https://api.whatsapp.com/send?phone=+5511995801998&text=" + mensagem;
+          "https://api.whatsapp.com/send?phone=+5511995801998&text=" + mensagem;
       };
 
       //   // Verificar se está em um dispositivo móvel
