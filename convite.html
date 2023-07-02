@@ -52,30 +52,32 @@
     </div>
 
     <script>
-      //   // Redirecionar para o WhatsApp
-      //   document.getElementById("whatsappButton").onclick = function () {
-      //     var mensagem = encodeURIComponent("Olá! Esta é uma mensagem padrão.");
-      //     window.location.href =
-      //       "https://api.whatsapp.com/send?phone=+5511995801998&text=" + mensagem;
-      //   };
-
-      // Verificar se está em um dispositivo móvel
-      if (
-        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-          navigator.userAgent
-        )
-      ) {
+      // Redirecionar para o WhatsApp
+      document.getElementById("whatsappButton").onclick = function () {
+        var mensagem = encodeURIComponent("Olá! Esta é uma mensagem padrão.");
         window.location.href =
           "whatsapp://send?phone=" + numeroCelular + "&text=" + mensagem;
-      } else {
-        // Abrir a versão web do WhatsApp
-        window.open(
-          "https://web.whatsapp.com/send?phone=" +
-            numeroCelular +
-            "&text=" +
-            mensagem
-        );
-      }
+        //   window.location.href =
+        // "https://api.whatsapp.com/send?phone=+5511995801998&text=" + mensagem;
+      };
+
+      //   // Verificar se está em um dispositivo móvel
+      //   if (
+      //     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      //       navigator.userAgent
+      //     )
+      //   ) {
+      //     window.location.href =
+      //       "whatsapp://send?phone=" + numeroCelular + "&text=" + mensagem;
+      //   } else {
+      //     // Abrir a versão web do WhatsApp
+      //     window.open(
+      //       "https://web.whatsapp.com/send?phone=" +
+      //         numeroCelular +
+      //         "&text=" +
+      //         mensagem
+      //     );
+      //   }
 
       // Mover o botão para um local aleatório na tela
       document.getElementById("moveButton").onclick = function () {
