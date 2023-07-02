@@ -12,6 +12,13 @@
         margin-top: 50px;
       }
 
+      .content {
+        margin: 50px;
+        padding: 20px;
+        background-color: #f2f2f2;
+        border-radius: 4px;
+      }
+
       .button-container {
         margin-top: 20px;
         display: flex;
@@ -38,29 +45,22 @@
       }
 
       #moveButton {
-        position: relative; /* Alterado para "relative" */
+        position: relative;
       }
     </style>
   </head>
   <body>
-    <h1>Gostou da mudança?</h1>
-    <p>(Experimenta tentar clicar no "Não" hehehe)</p>
+    <div class="content">
+      <h1>Eai, gostou?</h1>
+      <p>(Nem tenta clicar em "Não")</p>
 
-    <div class="button-container">
-      <button class="button whatsapp-button" id="whatsappButton">Sim!</button>
-      <button class="button move-button" id="moveButton">Não...</button>
+      <div class="button-container">
+        <button class="button whatsapp-button" id="whatsappButton">Sim!</button>
+        <button class="button move-button" id="moveButton">Não.</button>
+      </div>
     </div>
 
     <script>
-      //   // Redirecionar para o WhatsApp
-      //   document.getElementById("whatsappButton").onclick = function () {
-      //     var mensagem = encodeURIComponent("Olá! Esta é uma mensagem padrão.");
-      //     // window.location.href =
-      //     //   "whatsapp://send?phone=" + numeroCelular + "&text=" + mensagem;
-      //     window.location.href =
-      //       "https://api.whatsapp.com/send?phone=+5511995801998&text=" + mensagem;
-      //   };
-
       // Redirecionar para o WhatsApp no aplicativo
       document.getElementById("whatsappButton").onclick = function () {
         var mensagem = encodeURIComponent("Oi gato");
